@@ -26,18 +26,20 @@
     <div class="bg-java">
         <div class="java">
             <script>
-                function InserirImagem(url) {
-                    let img = document.querySelector("img");
-                    img.src = "images/bg.jpg";
-                }
                 var nomeDoCarro = ("Lamborguini");
-                var nome = prompt('Qual é o seu nome?');
-                var idade = parseInt(prompt('Digite aqui sua idade:'));
-                var somaIdade = idade + 1;
-                document.write("Olá " + nome + "! Você já está com " + idade + ". Admire esta bela paisagem :) Antes que complete " + somaIdade);
+
+                function funcao1() {
+                    var nome = prompt('Qual é o seu nome?');
+                    var idade = parseInt(prompt('Digite aqui sua idade:'));
+                    var somaIdade = idade + 1;
+                    let div1 = document.querySelector(".java");
+                    div1.innerText = ("Olá " + nome + "! Você já está com " + idade + ". Admire esta bela paisagem :) Antes que complete " + somaIdade);
+                }
             </script>
         </div>
     </div>
+
+    <button onclick="funcao1()">EXECUTAR</button>
 
 
 </body>
